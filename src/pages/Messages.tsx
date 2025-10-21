@@ -68,9 +68,7 @@ It has been 4 years since I joined eds. You have always been the superstar I loo
             id: 6,
             name: 'Vighnesha Gharat',
             role: 'Software Developer',
-            message: `Happy Birthday, Naofumi!
-
-Wishing you a wonderful birthday and a year filled with success, happiness, and good health. You have been an exceptional mentor, and I truly appreciate all the guidance, knowledge, and support you've shared. Your leadership, professionalism, and positive attitude have always been inspiring. It has been a privilege to learn from you and work alongside you. May all your goals and wishes come true, and may this year bring you continued growth and achievements. Have a fantastic day celebrating your special day!`,
+            message: `Happy Birthday, Naofumi! Wishing you a wonderful birthday and a year filled with success, happiness, and good health. You have been an exceptional mentor, and I truly appreciate all the guidance, knowledge, and support you've shared. We created Graphite together along with DE & Quants, it was a great experience. Graphite was something totally new and challenging, It was the first thing I took ownership of. I was told that it was your vision from the very beginning and I feel lucky to have worked with you on Graphite. What started from a thought is now replacing spotfire from our application. Your leadership, professionalism, and positive attitude have always been inspiring. It has been a privilege to learn from you and work alongside you. May all your goals and wishes come true, and may this year bring you continued growth and achievements. Have a fantastic day celebrating your special day!`,
             avatar: 'VG',
         },
         {
