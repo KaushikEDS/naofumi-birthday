@@ -6,7 +6,7 @@ import About from './pages/About'
 import Gallery from './pages/Gallery'
 import Videos from './pages/Videos'
 import Messages from './pages/Messages'
-import Timeline from './pages/Timeline'
+import Party from './pages/Party'
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/messages" element={<Messages />} />
-          <Route path="/timeline" element={<Timeline />} />
+          <Route path="/party" element={<Party />} />
         </Routes>
       </div>
     </Router>

@@ -1,43 +1,19 @@
 import './Videos.css'
 
 const Videos = () => {
-  // Placeholder video data - replace with actual videos
+  // Actual videos from your collection
   const videos = [
     { 
       id: 1, 
-      title: 'Birthday Message from Team Alpha', 
-      thumbnail: 'https://via.placeholder.com/400x300/ff6b6b/ffffff?text=Video+1',
-      duration: '2:30'
+      title: 'Birthday Message 1', 
+      videoUrl: '/videos/526b3aba-84a6-4a8e-82a4-52a500327ffb.MP4',
+      thumbnail: '/images/0447feaa-bde3-49c7-b671-ff6c1fc81188.jpg'
     },
     { 
       id: 2, 
-      title: 'Heartfelt Wishes from Team Beta', 
-      thumbnail: 'https://via.placeholder.com/400x300/4ecdc4/ffffff?text=Video+2',
-      duration: '3:15'
-    },
-    { 
-      id: 3, 
-      title: 'Special Message from Leadership', 
-      thumbnail: 'https://via.placeholder.com/400x300/45b7d1/ffffff?text=Video+3',
-      duration: '1:45'
-    },
-    { 
-      id: 4, 
-      title: 'Team Celebration Montage', 
-      thumbnail: 'https://via.placeholder.com/400x300/f9ca24/ffffff?text=Video+4',
-      duration: '4:20'
-    },
-    { 
-      id: 5, 
-      title: 'Memories and Milestones', 
-      thumbnail: 'https://via.placeholder.com/400x300/6c5ce7/ffffff?text=Video+5',
-      duration: '5:00'
-    },
-    { 
-      id: 6, 
-      title: 'Birthday Wishes Compilation', 
-      thumbnail: 'https://via.placeholder.com/400x300/00b894/ffffff?text=Video+6',
-      duration: '3:45'
+      title: 'Birthday Message 2', 
+      videoUrl: '/videos/a07829f3-2a37-409b-a42c-39ebcd7df661.MP4',
+      thumbnail: '/images/115b2253-95a1-4ffc-bb95-38035e845722.jpg'
     },
   ]
 
@@ -61,55 +37,23 @@ const Videos = () => {
               <div 
                 key={video.id} 
                 className="video-card"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                style={{ animationDelay: `${index * 0.15}s` }}
               >
-                <div className="video-thumbnail">
-                  <img src={video.thumbnail} alt={video.title} />
-                  <div className="play-overlay">
-                    <div className="play-button">
-                      <span>▶</span>
-                    </div>
-                  </div>
-                  <div className="video-duration">{video.duration}</div>
+                <div className="video-player">
+                  <video 
+                    controls 
+                    poster={video.thumbnail}
+                    className="video-element"
+                  >
+                    <source src={video.videoUrl} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
                 <div className="video-info">
                   <h3 className="video-title">{video.title}</h3>
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="videos-note">
-            <div className="note-content">
-              <h3>Add Your Videos</h3>
-              <p>
-                To add video messages, you have two options:
-              </p>
-              
-              <div className="note-option">
-                <h4>Option 1: Local Videos</h4>
-                <ol>
-                  <li>Place video files in the <code>public/videos/</code> folder</li>
-                  <li>Update the videos array in <code>src/pages/Videos.tsx</code></li>
-                  <li>Add video element to display the video</li>
-                </ol>
-                <div className="note-example">
-                  <code>{`<video controls width="100%">\n  <source src="/videos/message.mp4" type="video/mp4" />\n</video>`}</code>
-                </div>
-              </div>
-
-              <div className="note-option">
-                <h4>Option 2: Embedded Videos (YouTube/Vimeo)</h4>
-                <ol>
-                  <li>Upload videos to YouTube or Vimeo</li>
-                  <li>Get the embed code or video ID</li>
-                  <li>Use iframe to embed the video</li>
-                </ol>
-                <div className="note-example">
-                  <code>{`<iframe\n  src="https://www.youtube.com/embed/VIDEO_ID"\n  width="100%"\n  height="315"\n  frameBorder="0"\n  allowFullScreen\n></iframe>`}</code>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -118,4 +62,3 @@ const Videos = () => {
 }
 
 export default Videos
-

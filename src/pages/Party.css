@@ -1,0 +1,361 @@
+.party-page {
+  background: #0a0a0a;
+  min-height: 100vh;
+}
+
+.party-hero {
+  padding: 10rem 2rem 6rem;
+  text-align: center;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  border-bottom: 1px solid rgba(189, 147, 87, 0.2);
+}
+
+.header-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.header-line {
+  width: 150px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #bd9357, transparent);
+}
+
+.page-title {
+  font-size: 4rem;
+  color: #ffffff;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  animation: fadeInUp 0.8s ease;
+  font-weight: 600;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: rgba(189, 147, 87, 0.8);
+  font-weight: 300;
+  animation: fadeInUp 0.8s ease 0.2s backwards;
+  font-family: 'Lora', serif;
+  letter-spacing: 2px;
+}
+
+.party-content {
+  padding: 6rem 2rem;
+}
+
+.party-card {
+  max-width: 900px;
+  margin: 0 auto 6rem;
+  background: transparent;
+  border: 1px solid rgba(189, 147, 87, 0.3);
+  padding: 4rem 3rem;
+  position: relative;
+  animation: fadeInUp 0.8s ease 0.3s backwards;
+}
+
+.card-decoration {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(189, 147, 87, 0.5), transparent);
+}
+
+.card-decoration.top {
+  top: 20px;
+}
+
+.card-decoration.bottom {
+  bottom: 20px;
+}
+
+.party-message {
+  text-align: center;
+}
+
+.party-heading {
+  font-size: 3rem;
+  color: #bd9357;
+  margin-bottom: 3rem;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.message-divider {
+  width: 80px;
+  height: 1px;
+  background: #bd9357;
+  margin: 3rem auto;
+}
+
+.party-text {
+  font-size: 1.2rem;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+  font-family: 'Lora', serif;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.party-text.closing {
+  margin-top: 2rem;
+}
+
+.party-question {
+  background: rgba(189, 147, 87, 0.05);
+  border: 1px solid rgba(189, 147, 87, 0.3);
+  padding: 3rem 2.5rem;
+  margin: 3rem 0;
+  position: relative;
+}
+
+.question-mark {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background: #0a0a0a;
+  border: 2px solid #bd9357;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #bd9357;
+  font-family: 'Cinzel', serif;
+}
+
+.party-question h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  line-height: 1.8;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.party-signature {
+  font-size: 1.3rem;
+  color: rgba(189, 147, 87, 0.9);
+  font-family: 'Lora', serif;
+  font-style: italic;
+  line-height: 2;
+  margin-top: 1rem;
+}
+
+/* Expectations Section */
+.expectations-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  animation: fadeInUp 0.8s ease 0.5s backwards;
+}
+
+.expectations-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #bd9357;
+  margin-bottom: 4rem;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+}
+
+.expectations-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #bd9357, transparent);
+}
+
+.expectations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.expectation-item {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: transparent;
+  border: 1px solid rgba(189, 147, 87, 0.2);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.expectation-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(189, 147, 87, 0.05) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.expectation-item:hover::before {
+  opacity: 1;
+}
+
+.expectation-item:hover {
+  border-color: #bd9357;
+  transform: translateY(-5px);
+}
+
+.expectation-number {
+  font-size: 2.5rem;
+  color: rgba(189, 147, 87, 0.3);
+  margin-bottom: 1.5rem;
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+  transition: all 0.4s ease;
+}
+
+.expectation-item:hover .expectation-number {
+  color: #bd9357;
+}
+
+.expectation-item h4 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.expectation-item p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
+  font-family: 'Lora', serif;
+  letter-spacing: 0.3px;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .page-title {
+    font-size: 3rem;
+    letter-spacing: 4px;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .header-decoration {
+    gap: 2rem;
+  }
+
+  .header-line {
+    width: 80px;
+  }
+
+  .party-card {
+    padding: 3rem 2rem;
+  }
+
+  .party-heading {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+
+  .party-question h3 {
+    font-size: 1.5rem;
+  }
+
+  .expectations-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .expectations-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .page-subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+
+  .header-decoration {
+    gap: 1rem;
+  }
+
+  .header-line {
+    width: 40px;
+  }
+
+  .party-card {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .party-heading {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .party-text {
+    font-size: 1rem;
+  }
+
+  .party-question {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .party-question h3 {
+    font-size: 1.2rem;
+  }
+
+  .question-mark {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    top: -25px;
+  }
+
+  .expectations-title {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+
+  .expectations-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .expectation-item {
+    padding: 2rem 1.5rem;
+  }
+
+  .expectation-number {
+    font-size: 2rem;
+  }
+}
+

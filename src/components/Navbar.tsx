@@ -26,7 +26,7 @@ const Navbar = () => {
     { path: '/gallery', label: 'Gallery', icon: '' },
     { path: '/videos', label: 'Videos', icon: '' },
     { path: '/messages', label: 'Messages', icon: '' },
-    { path: '/timeline', label: 'Timeline', icon: '' },
+    { path: '/party', label: 'Party', icon: '' },
   ]
 
   return (

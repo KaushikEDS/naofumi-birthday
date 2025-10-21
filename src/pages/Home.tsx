@@ -67,10 +67,10 @@ const Home = () => {
               <p>Heartfelt birthday wishes</p>
             </Link>
 
-            <Link to="/timeline" className="link-card">
+            <Link to="/party" className="link-card">
               <div className="card-number">04</div>
-              <h3>Timeline</h3>
-              <p>Journey and milestones</p>
+              <h3>Party</h3>
+              <p>Join us for celebration</p>
             </Link>
           </div>
         </div>

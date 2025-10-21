@@ -7,9 +7,8 @@ const About = () => {
         <div className="container">
           <div className="about-content">
             <div className="about-image">
-              <div className="image-placeholder">
-                <div className="placeholder-border"></div>
-                <p className="placeholder-text">Photo</p>
+              <div className="image-container">
+                <img src="/hero.png" alt="Naofumi Ezaki" className="about-photo" />
               </div>
             </div>
 
