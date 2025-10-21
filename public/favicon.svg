@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bd9357;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Dark background circle -->
+  <circle cx="50" cy="50" r="48" fill="#0a0a0a" stroke="url(#goldGradient)" stroke-width="2"/>
+  
+  <!-- Birthday cake base -->
+  <rect x="30" y="55" width="40" height="20" fill="url(#goldGradient)" rx="2"/>
+  
+  <!-- Cake middle layer -->
+  <rect x="32" y="45" width="36" height="12" fill="#bd9357" rx="2"/>
+  
+  <!-- Cake top layer -->
+  <rect x="35" y="36" width="30" height="11" fill="url(#goldGradient)" rx="2"/>
+  
+  <!-- Candle -->
+  <rect x="48" y="28" width="4" height="9" fill="#bd9357" rx="1"/>
+  
+  <!-- Flame -->
+  <ellipse cx="50" cy="25" rx="3" ry="5" fill="#ffd700"/>
+  <ellipse cx="50" cy="24" rx="2" ry="3" fill="#fff"/>
+  
+  <!-- Decorative stars -->
+  <path d="M 20 30 L 22 32 L 20 34 L 18 32 Z" fill="#bd9357"/>
+  <path d="M 78 25 L 80 27 L 78 29 L 76 27 Z" fill="#bd9357"/>
+  <path d="M 25 70 L 27 72 L 25 74 L 23 72 Z" fill="#d4af37"/>
+  <path d="M 73 68 L 75 70 L 73 72 L 71 70 Z" fill="#d4af37"/>
+</svg>
+
