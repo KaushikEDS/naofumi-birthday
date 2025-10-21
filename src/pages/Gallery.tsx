@@ -16,6 +16,13 @@ const Gallery = () => {
     { id: 11, src: '/images/bb5c3350-fb2e-44e7-8c80-9d4f389dd348.jpg', alt: 'Memory 11' },
     // { id: 12, src: '/images/eb8d0ed9-66da-4d9c-9769-f92bf025f1e8.jpg', alt: 'Memory 12' },
     { id: 13, src: '/images/f3ac1bb2-bf16-4171-a3ef-4c84b2c6a9b8.jpg', alt: 'Memory 13' },
+    { id: 14, src: '/images/IMG_8576.jpg', alt: 'Memory 14' },
+    { id: 15, src: '/images/IMG_8577.jpg', alt: 'Memory 15' },
+    { id: 16, src: '/images/IMG_8578.jpg', alt: 'Memory 16' },
+    { id: 17, src: '/images/PHOTO-2023-12-03-10-59-22.jpg', alt: 'Memory 17' },
+    { id: 18, src: '/images/PHOTO-2023-12-28-07-27-26.jpg', alt: 'Memory 18' },
+    { id: 19, src: '/images/PHOTO-2024-10-14-14-36-01.jpg', alt: 'Memory 19' },
+    { id: 20, src: '/images/PHOTO-2024-12-08-07-05-25.jpg', alt: 'Memory 20' },
   ]
 
   return (
