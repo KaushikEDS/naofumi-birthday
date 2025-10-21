@@ -149,25 +149,6 @@ I hope this prompt delivers all the good vibes, epic wishes, and smiles you dese
                             </div>
                         ))}
                     </div>
-
-                    <div className="messages-note">
-                        <div className="note-content">
-                            <h3>Customize Messages</h3>
-                            <p>
-                                Edit <code>src/pages/Messages.tsx</code> to add personalized birthday wishes from your team members.
-                            </p>
-                            <div className="note-example">
-                                <strong>Message Structure:</strong>
-                                <code>{`{
-  id: 1,
-  name: 'John Doe',
-  role: 'Senior Engineer',
-  message: 'Your birthday message here...',
-  avatar: '👨‍💻' // Choose an emoji or use image URL
-}`}</code>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
         </div>
