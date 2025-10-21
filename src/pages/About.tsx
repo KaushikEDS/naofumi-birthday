@@ -14,19 +14,26 @@ const About = () => {
 
             <div className="about-text">
               <h1 className="page-title">About Naofumi Ezaki</h1>
-              <h2 className="role-title">Chief Architect</h2>
+              <h2 className="role-title">Chief Architect · Our Silent Guardian</h2>
               
               <div className="bio-section">
                 <p className="bio-text">
-                  Naofumi Ezaki is our esteemed Chief Architect, leading the technical vision and 
-                  architectural direction of our organization. With his exceptional expertise and 
-                  innovative mindset, he has been instrumental in shaping our technology landscape.
+                  Naofumi Ezaki is the superhero our company didn't know it needed, but can't imagine 
+                  working without. Like a silent guardian, he tackles the toughest challenges behind 
+                  the scenes, ensuring everything runs smoothly while the rest of us sleep peacefully.
                 </p>
                 
                 <p className="bio-text">
-                  Known for his mentorship and leadership, Naofumi inspires the team to push 
-                  boundaries and achieve excellence. His dedication to fostering a collaborative 
-                  environment has made him not just a leader, but a role model for everyone.
+                  With his exceptional intelligence and problem-solving prowess, Naofumi is the person 
+                  we all turn to when facing the impossible. No matter how complex the issue, he has 
+                  the answer. His calm demeanor and brilliant solutions have saved countless projects 
+                  and guided us through the most challenging technical storms.
+                </p>
+
+                <p className="bio-text">
+                  He doesn't need a cape—his keyboard is his superpower, and his wisdom is our shield. 
+                  Every day, Naofumi silently protects our systems, elevates our code, and empowers 
+                  every team member to be their best.
                 </p>
               </div>
             </div>
@@ -38,32 +45,32 @@ const About = () => {
         <div className="container">
           <div className="section-header">
             <div className="header-line"></div>
-            <h2 className="section-title">Achievements & Impact</h2>
+            <h2 className="section-title">Superpowers & Impact</h2>
             <div className="header-line"></div>
           </div>
           <div className="achievements-grid">
             <div className="achievement-card">
               <div className="achievement-number">01</div>
-              <h3>Technical Leadership</h3>
-              <p>Leading architectural decisions and technical strategy across the organization</p>
+              <h3>Crisis Management</h3>
+              <p>Swoops in to rescue any project from disaster, solving critical issues that keep us running</p>
             </div>
 
             <div className="achievement-card">
               <div className="achievement-number">02</div>
-              <h3>Team Mentorship</h3>
-              <p>Guiding and mentoring team members to grow their technical and leadership skills</p>
+              <h3>The Go-To Problem Solver</h3>
+              <p>The first person we call when stuck—always has the answer, no matter how complex</p>
             </div>
 
             <div className="achievement-card">
               <div className="achievement-number">03</div>
-              <h3>Innovation</h3>
-              <p>Driving innovation and implementing cutting-edge solutions</p>
+              <h3>Silent Guardian</h3>
+              <p>Quietly fixes issues behind the scenes before they become problems for anyone else</p>
             </div>
 
             <div className="achievement-card">
               <div className="achievement-number">04</div>
-              <h3>Project Excellence</h3>
-              <p>Delivering successful projects with outstanding quality and performance</p>
+              <h3>Brilliant Mind</h3>
+              <p>Exceptional intelligence that cuts through complexity like a hot knife through butter</p>
             </div>
           </div>
         </div>
@@ -73,39 +80,39 @@ const About = () => {
         <div className="container">
           <div className="section-header">
             <div className="header-line"></div>
-            <h2 className="section-title">Professional Excellence</h2>
+            <h2 className="section-title">Why He's Our Hero</h2>
             <div className="header-line"></div>
           </div>
           <div className="qualities-list">
             <div className="quality-item">
               <div className="quality-number">I</div>
               <div className="quality-content">
-                <h3>Visionary Thinking</h3>
-                <p>Always ahead of the curve with innovative solutions and strategic planning</p>
+                <h3>Always There When We Need Him</h3>
+                <p>The reliable force we turn to in times of crisis—always ready with a solution</p>
               </div>
             </div>
 
             <div className="quality-item">
               <div className="quality-number">II</div>
               <div className="quality-content">
-                <h3>Collaborative Spirit</h3>
-                <p>Fosters teamwork and creates an inclusive environment where everyone thrives</p>
+                <h3>Extraordinarily Smart</h3>
+                <p>Possesses the rare combination of deep technical knowledge and practical wisdom</p>
               </div>
             </div>
 
             <div className="quality-item">
               <div className="quality-number">III</div>
               <div className="quality-content">
-                <h3>Knowledge Sharing</h3>
-                <p>Passionate about teaching and sharing expertise with the entire team</p>
+                <h3>Calm Under Pressure</h3>
+                <p>When chaos strikes, he remains composed and guides us to safety with clarity</p>
               </div>
             </div>
 
             <div className="quality-item">
               <div className="quality-number">IV</div>
               <div className="quality-content">
-                <h3>Problem Solver</h3>
-                <p>Tackles complex challenges with creativity and determination</p>
+                <h3>Our Safety Net</h3>
+                <p>Works tirelessly behind the scenes, ensuring we can all do our best work worry-free</p>
               </div>
             </div>
           </div>
