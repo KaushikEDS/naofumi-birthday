@@ -3,19 +3,19 @@ import './Gallery.css'
 const Gallery = () => {
   // Actual photos from your collection
   const photos = [
-    { id: 1, src: '/images/0447feaa-bde3-49c7-b671-ff6c1fc81188.jpg', alt: 'Memory 1', category: 'Team' },
-    { id: 2, src: '/images/107997d6-775e-4fe6-bcd9-e9a6009b20dc.jpg', alt: 'Memory 2', category: 'Work' },
-    { id: 3, src: '/images/115b2253-95a1-4ffc-bb95-38035e845722.jpg', alt: 'Memory 3', category: 'Events' },
-    { id: 4, src: '/images/2325b127-0fa4-4ba2-a1f7-2b29fc342002.jpg', alt: 'Memory 4', category: 'Team' },
-    { id: 5, src: '/images/2ed91b21-9a86-43d2-af14-79dc5069b0fb.jpg', alt: 'Memory 5', category: 'Work' },
-    { id: 6, src: '/images/4dafe874-91a3-47d2-8a35-8a2832ab267a.jpg', alt: 'Memory 6', category: 'Events' },
-    { id: 7, src: '/images/5cdb7fc7-b4ed-4603-b945-5d49cdd3140b.jpg', alt: 'Memory 7', category: 'Team' },
-    { id: 8, src: '/images/7cea4d93-2630-4e11-bcf4-7d7df26ba6ae.jpg', alt: 'Memory 8', category: 'Work' },
-    { id: 9, src: '/images/8adce09a-54de-4af0-9d5c-148d1071a3f9.jpg', alt: 'Memory 9', category: 'Events' },
-    { id: 10, src: '/images/845e996e-e067-4cd1-b0f4-15b412f4d392.jpg', alt: 'Memory 10', category: 'Team' },
-    { id: 11, src: '/images/bb5c3350-fb2e-44e7-8c80-9d4f389dd348.jpg', alt: 'Memory 11', category: 'Work' },
-    { id: 12, src: '/images/eb8d0ed9-66da-4d9c-9769-f92bf025f1e8.jpg', alt: 'Memory 12', category: 'Events' },
-    { id: 13, src: '/images/f3ac1bb2-bf16-4171-a3ef-4c84b2c6a9b8.jpg', alt: 'Memory 13', category: 'Team' },
+    { id: 1, src: '/images/0447feaa-bde3-49c7-b671-ff6c1fc81188.jpg', alt: 'Memory 1' },
+    { id: 2, src: '/images/107997d6-775e-4fe6-bcd9-e9a6009b20dc.jpg', alt: 'Memory 2' },
+    { id: 3, src: '/images/115b2253-95a1-4ffc-bb95-38035e845722.jpg', alt: 'Memory 3' },
+    { id: 4, src: '/images/2325b127-0fa4-4ba2-a1f7-2b29fc342002.jpg', alt: 'Memory 4' },
+    { id: 5, src: '/images/2ed91b21-9a86-43d2-af14-79dc5069b0fb.jpg', alt: 'Memory 5' },
+    { id: 6, src: '/images/4dafe874-91a3-47d2-8a35-8a2832ab267a.jpg', alt: 'Memory 6' },
+    { id: 7, src: '/images/5cdb7fc7-b4ed-4603-b945-5d49cdd3140b.jpg', alt: 'Memory 7' },
+    { id: 8, src: '/images/7cea4d93-2630-4e11-bcf4-7d7df26ba6ae.jpg', alt: 'Memory 8' },
+    { id: 9, src: '/images/8adce09a-54de-4af0-9d5c-148d1071a3f9.jpg', alt: 'Memory 9' },
+    { id: 10, src: '/images/845e996e-e067-4cd1-b0f4-15b412f4d392.jpg', alt: 'Memory 10' },
+    { id: 11, src: '/images/bb5c3350-fb2e-44e7-8c80-9d4f389dd348.jpg', alt: 'Memory 11' },
+    { id: 12, src: '/images/eb8d0ed9-66da-4d9c-9769-f92bf025f1e8.jpg', alt: 'Memory 12' },
+    { id: 13, src: '/images/f3ac1bb2-bf16-4171-a3ef-4c84b2c6a9b8.jpg', alt: 'Memory 13' },
   ]
 
   return (
@@ -41,9 +41,6 @@ const Gallery = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <img src={photo.src} alt={photo.alt} />
-                <div className="gallery-overlay">
-                  <span className="photo-category">{photo.category}</span>
-                </div>
               </div>
             ))}
           </div>
