@@ -1,0 +1,346 @@
+.timeline-page {
+  background: #0a0a0a;
+  min-height: 100vh;
+}
+
+.timeline-header-section {
+  padding: 10rem 2rem 6rem;
+  text-align: center;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  border-bottom: 1px solid rgba(189, 147, 87, 0.2);
+}
+
+.header-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.header-line {
+  width: 150px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #bd9357, transparent);
+}
+
+.page-title {
+  font-size: 4rem;
+  color: #ffffff;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  animation: fadeInUp 0.8s ease;
+  font-weight: 600;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: rgba(189, 147, 87, 0.8);
+  font-weight: 300;
+  animation: fadeInUp 0.8s ease 0.2s backwards;
+  font-family: 'Lora', serif;
+  letter-spacing: 2px;
+}
+
+.timeline-content {
+  padding: 6rem 2rem;
+}
+
+.timeline-wrapper {
+  max-width: 1000px;
+  margin: 0 auto 6rem;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100%;
+  background: rgba(189, 147, 87, 0.3);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 5rem;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.timeline-item.left .timeline-content-box {
+  margin-right: calc(50% + 50px);
+  text-align: right;
+  animation: slideInLeft 0.8s ease forwards;
+}
+
+.timeline-item.right .timeline-content-box {
+  margin-left: calc(50% + 50px);
+  text-align: left;
+  animation: slideInRight 0.8s ease forwards;
+}
+
+.timeline-content-box {
+  background: transparent;
+  padding: 3rem;
+  border: 1px solid rgba(189, 147, 87, 0.2);
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.timeline-content-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(189, 147, 87, 0.05) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.timeline-content-box:hover::before {
+  opacity: 1;
+}
+
+.timeline-content-box:hover {
+  border-color: #bd9357;
+  transform: scale(1.02);
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: #bd9357;
+  border: 3px solid #0a0a0a;
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+
+.timeline-item:hover .timeline-dot {
+  transform: translateX(-50%) scale(1.3);
+  box-shadow: 0 0 20px rgba(189, 147, 87, 0.5);
+}
+
+.timeline-icon {
+  font-size: 2.5rem;
+  color: rgba(189, 147, 87, 0.4);
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+  transition: all 0.4s ease;
+}
+
+.timeline-content-box:hover .timeline-icon {
+  color: #bd9357;
+}
+
+.timeline-year {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #bd9357;
+  margin-bottom: 1rem;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 3px;
+}
+
+.timeline-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.timeline-description {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Lora', serif;
+  letter-spacing: 0.3px;
+}
+
+.timeline-note {
+  max-width: 800px;
+  margin: 0 auto;
+  background: transparent;
+  border: 1px solid rgba(189, 147, 87, 0.2);
+  padding: 3rem;
+  animation: fadeInUp 0.8s ease 0.6s backwards;
+}
+
+.note-content h3 {
+  font-size: 1.8rem;
+  color: #bd9357;
+  margin-bottom: 1.5rem;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.note-content p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+  font-family: 'Lora', serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+.note-content code {
+  background: rgba(189, 147, 87, 0.1);
+  padding: 0.3rem 0.7rem;
+  border-radius: 0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  color: #bd9357;
+  border: 1px solid rgba(189, 147, 87, 0.2);
+}
+
+.note-example {
+  background: rgba(189, 147, 87, 0.05);
+  padding: 1.5rem;
+  font-family: 'Courier New', monospace;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
+  border: 1px solid rgba(189, 147, 87, 0.2);
+}
+
+.note-example strong {
+  display: block;
+  margin-bottom: 1rem;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  color: #bd9357;
+  letter-spacing: 1px;
+}
+
+.note-example code {
+  display: block;
+  margin-top: 0.5rem;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  background: none;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .page-title {
+    font-size: 3rem;
+    letter-spacing: 4px;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .header-decoration {
+    gap: 2rem;
+  }
+
+  .header-line {
+    width: 80px;
+  }
+
+  .timeline-line {
+    left: 30px;
+  }
+
+  .timeline-item.left .timeline-content-box,
+  .timeline-item.right .timeline-content-box {
+    margin-left: 70px;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .timeline-dot {
+    left: 30px;
+  }
+
+  .timeline-note {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .page-subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+
+  .header-decoration {
+    gap: 1rem;
+  }
+
+  .header-line {
+    width: 40px;
+  }
+
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-dot {
+    left: 20px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .timeline-item.left .timeline-content-box,
+  .timeline-item.right .timeline-content-box {
+    margin-left: 50px;
+  }
+
+  .timeline-content-box {
+    padding: 2rem;
+  }
+
+  .timeline-icon {
+    font-size: 2rem;
+  }
+
+  .timeline-year {
+    font-size: 1.3rem;
+  }
+
+  .timeline-title {
+    font-size: 1.4rem;
+  }
+
+  .timeline-description {
+    font-size: 1rem;
+  }
+
+  .timeline-note {
+    padding: 1.5rem;
+  }
+
+  .note-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .note-content p {
+    font-size: 1rem;
+  }
+}

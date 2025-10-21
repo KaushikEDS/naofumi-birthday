@@ -1,0 +1,339 @@
+.videos-page {
+  background: #0a0a0a;
+  min-height: 100vh;
+}
+
+.videos-header-section {
+  padding: 10rem 2rem 6rem;
+  text-align: center;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  border-bottom: 1px solid rgba(189, 147, 87, 0.2);
+}
+
+.header-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.header-line {
+  width: 150px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #bd9357, transparent);
+}
+
+.page-title {
+  font-size: 4rem;
+  color: #ffffff;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  animation: fadeInUp 0.8s ease;
+  font-weight: 600;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: rgba(189, 147, 87, 0.8);
+  font-weight: 300;
+  animation: fadeInUp 0.8s ease 0.2s backwards;
+  font-family: 'Lora', serif;
+  letter-spacing: 2px;
+}
+
+.videos-content {
+  padding: 6rem 2rem;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+.video-card {
+  background: #1a1a1a;
+  border-radius: 0;
+  overflow: hidden;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  border: 1px solid rgba(189, 147, 87, 0.2);
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  border-color: #bd9357;
+}
+
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  opacity: 0.8;
+}
+
+.video-card:hover .video-thumbnail img {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.4s ease;
+}
+
+.video-card:hover .play-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.play-button {
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border: 2px solid #bd9357;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.play-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid #bd9357;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+
+.play-button span {
+  display: none;
+}
+
+.video-card:hover .play-button {
+  background: rgba(189, 147, 87, 0.1);
+  transform: scale(1.1);
+}
+
+.video-duration {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #bd9357;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  border: 1px solid rgba(189, 147, 87, 0.3);
+}
+
+.video-info {
+  padding: 2rem;
+}
+
+.video-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 1px;
+}
+
+.videos-note {
+  max-width: 900px;
+  margin: 0 auto;
+  background: transparent;
+  border: 1px solid rgba(189, 147, 87, 0.2);
+  padding: 3rem;
+  animation: fadeInUp 0.8s ease 0.4s backwards;
+}
+
+.note-content h3 {
+  font-size: 1.8rem;
+  color: #bd9357;
+  margin-bottom: 2rem;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.note-content p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.9;
+  margin-bottom: 2rem;
+  font-family: 'Lora', serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+.note-option {
+  background: rgba(189, 147, 87, 0.05);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(189, 147, 87, 0.2);
+}
+
+.note-option:last-child {
+  margin-bottom: 0;
+}
+
+.note-option h4 {
+  font-size: 1.3rem;
+  color: #bd9357;
+  margin-bottom: 1.5rem;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.note-option ol {
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 2;
+  font-family: 'Lora', serif;
+}
+
+.note-option code, .note-content code {
+  background: rgba(189, 147, 87, 0.1);
+  padding: 0.3rem 0.7rem;
+  border-radius: 0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: #bd9357;
+  border: 1px solid rgba(189, 147, 87, 0.2);
+}
+
+.note-example {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  overflow-x: auto;
+  border: 1px solid rgba(189, 147, 87, 0.2);
+}
+
+.note-example code {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  white-space: pre;
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .page-title {
+    font-size: 3rem;
+    letter-spacing: 4px;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .header-decoration {
+    gap: 2rem;
+  }
+
+  .header-line {
+    width: 80px;
+  }
+
+  .videos-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .videos-note {
+    padding: 2rem;
+  }
+
+  .note-option {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .page-subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+
+  .header-decoration {
+    gap: 1rem;
+  }
+
+  .header-line {
+    width: 40px;
+  }
+
+  .videos-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .play-button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .play-button::before {
+    border-left-width: 16px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+  }
+
+  .videos-note {
+    padding: 1.5rem;
+  }
+
+  .note-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .note-option h4 {
+    font-size: 1.1rem;
+  }
+}
