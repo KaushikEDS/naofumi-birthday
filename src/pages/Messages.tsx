@@ -13,74 +13,67 @@ const Messages = () => {
     const messages: Message[] = [
         {
             id: 1,
-            name: 'Team Member 1',
-            role: 'Software Engineer',
-            message: 'Happy Birthday, Naofumi! Thank you for being an amazing mentor and leader. Your guidance has helped me grow tremendously. Wishing you all the best.',
-            avatar: 'TM',
+            name: 'Rushika Harsora',
+            role: 'Mobile Developer',
+            message: 'Warmest birthday wishes to the best Chief Architect! Your vision and technical expertise inspire us daily. Have a wonderful celebration.',
+            avatar: 'RH',
         },
         {
             id: 2,
-            name: 'Team Member 2',
-            role: 'Senior Developer',
-            message: 'Warmest birthday wishes to the best Chief Architect! Your vision and technical expertise inspire us daily. Have a wonderful celebration.',
-            avatar: 'TM',
+            name: 'Akshay Vhatkar',
+            role: 'Mobile Developer',
+            message: 'Happy Birthday! Thank you for creating such a positive work environment and always pushing us to excel. Have an amazing day.',
+            avatar: 'AV',
         },
         {
             id: 3,
-            name: 'Team Member 3',
-            role: 'Developer',
-            message: 'Happy Birthday! Working with you has been an incredible learning experience. Thank you for always being supportive and encouraging.',
-            avatar: 'TM',
+            name: 'Bhagya Bijlaney',
+            role: 'Software Developer',
+            message: 'Wishing you a very happy birthday! Your dedication and passion for technology inspire us all. May this year bring you joy and success.',
+            avatar: 'BB',
         },
         {
             id: 4,
-            name: 'Team Member 4',
-            role: 'Junior Developer',
-            message: 'Wishing you a fantastic birthday! Your leadership and technical knowledge never cease to amaze me. Cheers to another great year.',
-            avatar: 'TM',
+            name: 'Nishant Satare',
+            role: 'Product Manager',
+            message: 'Happy Birthday, Naofumi! Your strategic thinking and collaborative approach make every project a success. Enjoy your special day.',
+            avatar: 'NS',
         },
         {
             id: 5,
-            name: 'Team Member 5',
-            role: 'QA Engineer',
-            message: 'Happy Birthday! Thank you for creating such a positive work environment and always pushing us to excel. Have an amazing day.',
-            avatar: 'TM',
+            name: 'Kaushik Nippanikar',
+            role: 'Senior Software Engineer',
+            message: 'Happy Birthday, Naofumi! Thank you for being an amazing mentor and leader. Wishing you all the best. Hope you are getting what you order these days.',
+            avatar: 'KN',
         },
         {
             id: 6,
-            name: 'Team Member 6',
-            role: 'DevOps Engineer',
-            message: 'Wishing you a very happy birthday! Your dedication and passion for technology inspire us all. May this year bring you joy and success.',
-            avatar: 'TM',
+            name: 'Vighnesha Gharat',
+            role: 'Developer',
+            message: 'Happy Birthday! Working with you has been an incredible learning experience. Thank you for always being supportive and encouraging.',
+            avatar: 'VG',
         },
         {
             id: 7,
-            name: 'Team Member 7',
-            role: 'Product Manager',
-            message: 'Happy Birthday, Naofumi! Your strategic thinking and collaborative approach make every project a success. Enjoy your special day.',
-            avatar: 'TM',
-        },
-        {
-            id: 8,
-            name: 'Team Member 8',
-            role: 'UI/UX Designer',
-            message: 'Warmest wishes on your birthday! Your attention to detail and creative problem-solving always inspire the team. Have a great one.',
-            avatar: 'TM',
+            name: 'Kunal Bhatia',
+            role: 'Software Developer',
+            message: 'Happy Birthday, Naofumi! Wishing you a great year ahead—always enjoy your humor and insights- Keep Smiling!',
+            avatar: 'KB',
         },
     ];
 
     return (
         <div className="messages-page page">
-      <section className="messages-header-section">
-        <div className="container">
-          <div className="header-decoration">
-            <div className="header-line"></div>
-            <h1 className="page-title">Birthday Wishes</h1>
-            <div className="header-line"></div>
-          </div>
-          <p className="page-subtitle">Heartfelt messages from your amazing team</p>
-        </div>
-      </section>
+            <section className="messages-header-section">
+                <div className="container">
+                    <div className="header-decoration">
+                        <div className="header-line"></div>
+                        <h1 className="page-title">Birthday Wishes</h1>
+                        <div className="header-line"></div>
+                    </div>
+                    <p className="page-subtitle">Heartfelt messages from your amazing team</p>
+                </div>
+            </section>
 
             <section className="messages-content">
                 <div className="container">
@@ -101,9 +94,9 @@ const Messages = () => {
                         ))}
                     </div>
 
-          <div className="messages-note">
-            <div className="note-content">
-              <h3>Customize Messages</h3>
+                    <div className="messages-note">
+                        <div className="note-content">
+                            <h3>Customize Messages</h3>
                             <p>
                                 Edit <code>src/pages/Messages.tsx</code> to add personalized birthday wishes from your team members.
                             </p>

@@ -25,7 +25,7 @@ const Navbar = () => {
     { path: '/about', label: 'About', icon: '' },
     { path: '/gallery', label: 'Gallery', icon: '' },
     { path: '/videos', label: 'Videos', icon: '' },
-    { path: '/messages', label: 'Messages', icon: '' },
+    // { path: '/messages', label: 'Messages', icon: '' }, // Hidden - incomplete
     { path: '/party', label: 'Party', icon: '' },
   ]
 

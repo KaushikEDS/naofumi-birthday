@@ -31,11 +31,11 @@ const Home = () => {
           </div>
 
           <div className="hero-cta">
-            <Link to="/messages" className="cta-button primary">
-              Birthday Wishes
+            <Link to="/gallery" className="cta-button primary">
+              View Gallery
             </Link>
-            <Link to="/gallery" className="cta-button secondary">
-              Gallery
+            <Link to="/party" className="cta-button secondary">
+              Party Invitation
             </Link>
           </div>
         </div>
@@ -63,8 +63,8 @@ const Home = () => {
 
             <Link to="/videos" className="link-card">
               <div className="card-number">03</div>
-              <h3>Messages</h3>
-              <p>Heartfelt birthday wishes</p>
+              <h3>Videos</h3>
+              <p>Special moments on video</p>
             </Link>
 
             <Link to="/party" className="link-card">
