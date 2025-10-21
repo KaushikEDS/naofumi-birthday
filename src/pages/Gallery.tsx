@@ -12,9 +12,9 @@ const Gallery = () => {
     { id: 7, src: '/images/5cdb7fc7-b4ed-4603-b945-5d49cdd3140b.jpg', alt: 'Memory 7' },
     { id: 8, src: '/images/7cea4d93-2630-4e11-bcf4-7d7df26ba6ae.jpg', alt: 'Memory 8' },
     { id: 9, src: '/images/8adce09a-54de-4af0-9d5c-148d1071a3f9.jpg', alt: 'Memory 9' },
-    { id: 10, src: '/images/845e996e-e067-4cd1-b0f4-15b412f4d392.jpg', alt: 'Memory 10' },
+    // { id: 10, src: '/images/845e996e-e067-4cd1-b0f4-15b412f4d392.jpg', alt: 'Memory 10' },
     { id: 11, src: '/images/bb5c3350-fb2e-44e7-8c80-9d4f389dd348.jpg', alt: 'Memory 11' },
-    { id: 12, src: '/images/eb8d0ed9-66da-4d9c-9769-f92bf025f1e8.jpg', alt: 'Memory 12' },
+    // { id: 12, src: '/images/eb8d0ed9-66da-4d9c-9769-f92bf025f1e8.jpg', alt: 'Memory 12' },
     { id: 13, src: '/images/f3ac1bb2-bf16-4171-a3ef-4c84b2c6a9b8.jpg', alt: 'Memory 13' },
   ]
 
