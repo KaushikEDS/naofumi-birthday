@@ -23,6 +23,13 @@ const Gallery = () => {
     { id: 18, src: '/images/PHOTO-2023-12-28-07-27-26.jpg', alt: 'Memory 18' },
     { id: 19, src: '/images/PHOTO-2024-10-14-14-36-01.jpg', alt: 'Memory 19' },
     { id: 20, src: '/images/PHOTO-2024-12-08-07-05-25.jpg', alt: 'Memory 20' },
+    { id: 22, src: '/images/IMG_2136.jpg', alt: 'Memory 22' },
+    { id: 23, src: '/images/IMG_3845 (1).jpg', alt: 'Memory 23' },
+    { id: 24, src: '/images/IMG_4702.jpg', alt: 'Memory 24' },
+    { id: 25, src: '/images/IMG_4731.jpg', alt: 'Memory 25' },
+    { id: 26, src: '/images/IMG20221216122041.jpg', alt: 'Memory 26' },
+    { id: 27, src: '/images/IMG20221217112140.jpg', alt: 'Memory 27' },
+    { id: 28, src: '/images/IMG20221217112157.jpg', alt: 'Memory 28' },
   ]
 
   return (

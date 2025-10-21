@@ -13,6 +13,11 @@ const Videos = () => {
       title: 'Another Epic Dance', 
       videoUrl: '/videos/a07829f3-2a37-409b-a42c-39ebcd7df661.MP4'
     },
+    { 
+      id: 3, 
+      title: 'Team Celebration', 
+      videoUrl: '/videos/VID-20231204-WA0104.mp4'
+    },
   ]
 
   return (
