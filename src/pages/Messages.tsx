@@ -116,6 +116,14 @@ I hope this prompt delivers all the good vibes, epic wishes, and smiles you dese
             message: `Wishing you a very Happy Birthday, Naofumi! Hope the year ahead brings you great health, joy, and fulfillment. Thank you for being such a motivating leader and guiding us to grow stronger in our tech journey.`,
             avatar: 'MS',
         },
+        {
+            id: 12,
+            name: 'Riya Kamdar',
+            role: 'Software Developer',
+            message: `Happy Birthday, Naofumi!
+ Wishing you a year filled with continued success, meaningful moments, and good health. Your leadership not only drives results but also inspires growth in everyone around you. Thank you for your constant support and for setting such a strong example. Enjoy your special day!`,
+            avatar: 'RK',
+        },
     ];
 
     return (
